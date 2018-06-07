@@ -15,7 +15,7 @@
               <p class="item-content">{{ item.content }}</p>
             </el-col>
             <el-col :xs="6" :sm="4" :md="4" :lg="4" :xl="4" style="text-align: right;">
-              <span class="time" style="margin-bottom: 10px;">{{ formatTime(item.createTime) }}前发布</span>
+              <span class="time" style="margin-bottom: 10px;">{{ formatTime(item.createTime) }}前</span>
               <el-tag v-if="item.status === 1">进行中</el-tag>
               <el-tag type="warning" v-if="item.status === 2">待抽奖</el-tag>
               <el-tag type="success" v-if="item.status === 3">领取中</el-tag>
